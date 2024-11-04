@@ -14,3 +14,5 @@ type GeocodeAddressesApiResponse struct {
 		Lon    string
 	}
 }
+
+//
