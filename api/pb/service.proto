@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package github.com.sephir4ik.geoservice_contracts;
+
+import "api/pb/models.proto";
+
+option go_package="github.com/sephir4ik/geoservice_contracts/grpc_contracts";
+
+service GeoProvider{
+  rpc Geocode(GeocodeRequest) returns (GeocodeResponse){}
+  rpc SearchAddresses(SearchAddressesRequest) returns (SearchAddressesResponse){}
+}
